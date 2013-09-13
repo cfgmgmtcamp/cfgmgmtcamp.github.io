@@ -15,35 +15,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* LAYOUT STYLES */
@@ -69,7 +69,6 @@ header {
   padding-top: 35px;
   padding-bottom: 25px;
   position: relative;
-  /*background: url('../images/skyline.jpg') no-repeat 0 100%;*/
 }
 
 header .camp-info {
@@ -109,6 +108,10 @@ nav {
   opacity: .95;
   border-top: 2px solid #5782ad;
   background: #fff;
+  box-shadow: 2px 2px 5px #ccc;
+  /* fix webkit rendering glitch
+  http://stackoverflow.com/questions/15152470/chrome-rendering-issue-fixed-position-anchor-with-ul-in-body */
+  -webkit-transform: translateZ(0) 
 }
 
 nav ul {
@@ -140,7 +143,9 @@ nav #menu-icon {
   height: 40px;
   background: #f00;
   float: right;
+  margin-right: 15px;
   display: none;
+  background: url('../images/menu_icon.png') no-repeat 0 0;
 }
 
 
@@ -166,6 +171,7 @@ nav #menu-icon {
 section {
   margin-bottom: 20px;
   padding: 80px 20px 80px 20px;
+  border-bottom: 2px solid #5782ad;
   background: #fff url('../images/hr.png') 50% 0 no-repeat;
   box-shadow: 2px 2px 2px #ccc;
 /*  background: url(http://boardgamesaddict.files.wordpress.com/2010/12/jigsaw-puzzle-psyon.png) repeat fixed;*/
@@ -427,6 +433,33 @@ footer a:hover {
   }
   nav #menu-icon {
     display: block;
+  }
+
+  nav ul, nav:active ul { 
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #5782ad;
+    right: 20px;
+    top: 60px;
+    width: 40%;
+    border-radius: 4px 0 4px 4px;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  .inner {
+    width: 100%;
   }
 
   #downloads {
