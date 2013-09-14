@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -24,6 +28,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#deadlines">Deadlines</a></li>
       <li><a href="#contributions">Contributions</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#route">Route</a></li>
+      <li><a href="#schedule">Schedule</a></li>
       </ul>
     </nav>
 
@@ -66,6 +73,80 @@
           </pre>
         </section>
 
+
+        <!-- sponsors -->
+        <section id="sponsors">
+          <h1>Sponsors</h1>
+
+          <h2>Platinum</h2>
+
+          <h2>Gold</h2>
+
+          <h2>Silver</h2>
+
+          <h2>Bronze</h2>
+        </section>
+
+        <section id="route">
+          <h1>Route</h1>
+          <div id="map"></div>
+        </section>
+
+        <!-- schedule -->
+        <section id="schedule">
+          <h1>Schedule</h1>
+
+          <table>
+            <thead>
+              <tr>
+                <td>Time</td>
+                <td>Speaker</td>
+                <td>Topic</td>
+                <td>Room</td>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
         <section id="contributions">
           <h1>Call for Contributions :</h1>
 
@@ -94,14 +175,23 @@
         <section id="main_content">
           <p>Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!</p>
 
-
           <a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp  OR #cfgmgmtcamp"</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+        </section>
         <footer>
 
         </footer>
       </div>
     </div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+    <script type="text/javascript">
+      var map = L.map('map').setView([51.505, -0.09], 13);
+
+      L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+          maxZoom: 4
+      }).addTo(map);
+    </script>
   </body>
 </html>

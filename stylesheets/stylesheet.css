@@ -148,8 +148,6 @@ nav #menu-icon {
   background: url('../images/menu_icon.png') no-repeat 0 0;
 }
 
-
-
 #container {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
   min-height: 595px;
@@ -175,6 +173,10 @@ section {
   background: #fff url('../images/hr.png') 50% 0 no-repeat;
   box-shadow: 2px 2px 2px #ccc;
 /*  background: url(http://boardgamesaddict.files.wordpress.com/2010/12/jigsaw-puzzle-psyon.png) repeat fixed;*/
+}
+
+#map {
+  height: 300px;
 }
 
 #downloads {
