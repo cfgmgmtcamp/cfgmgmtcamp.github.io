@@ -3,10 +3,18 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -14,88 +22,176 @@
   </head>
 
   <body>
+    <nav>
+      <a href="#" id="menu-icon"></a>
+      <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#deadlines">Deadlines</a></li>
+      <li><a href="#contributions">Contributions</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#route">Route</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      </ul>
+    </nav>
+
     <div id="container">
-      <div class="inner">
-
-        <header>
+      <header>
+        <div class="inner">
           <h1>#Cfgmgmtcamp</h1>
-          <h2>Config Management Camp</h2>
-          <h2>3 and 4 February 2014</h2>
-          <h2>Gent, Belgium </h2>
-        </header>
+          <div class="camp-info">
+            <h2>Config Management Camp</h2>
+            <h2>3 and 4 February 2014</h2>
+            <h2>Gent, Belgium </h2>
+          </div>
+        </div>
+      </header>
+
+      <div class="inner">
+        <section id="about">
+          <h1 id="about">About CfgMgmtCamp.eu</h1>
+          <p>
+          CfgMgmtCamp.eu is the event for people interested in Open Source Configuration management to meet each other. CfgMgmtCamp.eu will be the event where different communities will meet and exchange ideas both internally 
+          and within the broader community.
+          </p>
+          <p>Taking place right after FOSDEM in Brussels, Belgium you can do 2 Open Source events in 1 trip, so more value for your money. Taking place in Gent you can visit 2 Belgian cities, rather than one, and fall in love with Gent</p>
+
+          <p>CfgMgmtCamp.eu will have different rooms for each community,  hackspaces, trainings, workshops  and a general track with keynotes all about Configuration Management topics.</p>
+
+          <p>
+          Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!
+          </p>
+        </section>
+
+        <section id="deadlines">
+          <h1>Important Deadlines :</h1>
+
+          <pre>
+            10/10/2013 : Call for Communities Ends 
+            15/11/2013 : Call for Community presentations Ends
+            15/12/2013 : Call for Main presentations Ends
+            3/2/2014   : CfgMgmtCamp.eu Starts
+          </pre>
+        </section>
 
 
-        <hr>
-        <h1>About CfgMgmtCamp.eu</h1>
-        <p>
-        CfgMgmtCamp.eu is the event for people interested in Open Source Configuration management to meet each other. CfgMgmtCamp.eu will be the event where different communities will meet and exchange ideas both internally 
-        and within the broader community.
-        </p>
-        <p>Taking place right after FOSDEM in Brussels, Belgium you can do 2 Open Source events in 1 trip, so more value for your money. Taking place in Gent you can visit 2 Belgian cities, rather than one, and fall in love with Gent</p>
+        <!-- sponsors -->
+        <section id="sponsors">
+          <h1>Sponsors</h1>
 
-        <p>CfgMgmtCamp.eu will have different rooms for each community,  hackspaces, trainings, workshops  and a general track with keynotes all about Configuration Management topics.</p>
+          <h2>Platinum</h2>
 
-            <p>
-            Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!
-            </p>
+          <h2>Gold</h2>
 
-        <h1>Important Deadlines :</h1>
+          <h2>Silver</h2>
 
-<pre>
-           10/10/2013 : Call for Communities Ends 
-           15/11/2013 : Call for Community presentations Ends
-           15/12/2013 : Call for Main presentations Ends
-           3/2/2014   : CfgMgmtCamp.eu Starts
-           </pre>
+          <h2>Bronze</h2>
+        </section>
 
-        <h1>Call for Contributions :</h1>
+        <section id="route">
+          <h1>Route</h1>
+          <div id="map"></div>
+        </section>
 
-        We are looking for help on different levels : 
-        
+        <!-- schedule -->
+        <section id="schedule">
+          <h1>Schedule</h1>
 
-        <ul>
-          <li>
-          <strong>Room proposals</strong>: If you are part of a vibrant config management community, we want to help you out to get to know your community and to learn from others.  We have a limited number of rooms available to host your own 
-          sessions. Send new room proposals to:  
-          <a href="mailto:cfp@cfgmgmtcamp.eu">cfp@cfgmtcamp.eu</a>
-          </li>
-          <li><strong>Talk proposals</strong>: We are looking for speakers for our main track, speakers about topics that are relevant for all config management tools (Application Management, Continuous Delivery, Network Devices,
-          Distributed Systems, etc) , topics that tackle new evolutions in config management land. <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHJUWEpJcGVncU92b0NNLW9TR2IyMHc6MA">Submit talk proposals for the main room</a> using the form below. We also recommend <a href="https://docs.google.com/spreadsheet/ccc?key=0Ak-xxtgink73dHJUWEpJcGVncU92b0NNLW9TR2IyMHc&usp=sharing">viewing the other talk proposals that have already been submitted</a> to avoid duplication of effort.</li>
-          <li>
-          <strong>Sponsors</strong>: We are looking for sponsors of all sizes.  CfgMgmtCamp.eu is looking for a large number of sponsors for all kinds of different things.
-          The more sponsors we get the more  we can give to our attendees, and since we hope to keep the event free, your contributions both big and small are welcome.
-          More specifically we are looking for  named sponsors for Breakfast , Lunch, Breaks, Social Event, Speakers Dinner, and much more. Email
-          <a href="mailto:info@cfgmgmtcamp.eu">info@cfgmtcamp.eu</a> to sponsor.
-          </li>
-          <li><strong>A web designer/graphic artist</strong>: To make this site better,  graphic/ html wizards, please send your pull requests <a href="https://github.com/cfgmgmtcamp/cfgmgmtcamp.github.io">https://github.com/cfgmgmtcamp/cfgmgmtcamp.github.io</a> 
-          </li>
-        </ul>
+          <table>
+            <thead>
+              <tr>
+                <td>Time</td>
+                <td>Speaker</td>
+                <td>Topic</td>
+                <td>Room</td>
+              </tr>
+            </thead>
 
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHJUWEpJcGVncU92b0NNLW9TR2IyMHc6MA" width="760" height="1166" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <tbody>
 
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
 
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+
+              <tr>
+                <td>8:00 am</td>
+                <td>John Appleseed</td>
+                <td>Apple</td>
+                <td>41B</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+        <section id="contributions">
+          <h1>Call for Contributions :</h1>
+
+          We are looking for help on different levels :
+
+          <ul>
+            <li>
+            <strong>Room proposals</strong>: If you are part of a vibrant config management community, we want to help you out to get to know your community and to learn from others.  We have a limited number of rooms available to host your own 
+            sessions. Send new room proposals to:  
+            <a href="mailto:cfp@cfgmgmtcamp.eu">cfp@cfgmtcamp.eu</a>
+            </li>
+            <li><strong>Talk proposals</strong>: We are looking for speakers for our main track, speakers about topics that are relevant for all config management tools (Application Management, Continuous Delivery, Network Devices,
+            Distributed Systems, etc) , topics that tackle new evolutions in config management land. <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHJUWEpJcGVncU92b0NNLW9TR2IyMHc6MA">Submit talk proposals for the main room</a> using the form below. We also recommend <a href="https://docs.google.com/spreadsheet/ccc?key=0Ak-xxtgink73dHJUWEpJcGVncU92b0NNLW9TR2IyMHc&usp=sharing">viewing the other talk proposals that have already been submitted</a> to avoid duplication of effort.</li>
+            <li>
+            <strong>Sponsors</strong>: We are looking for sponsors of all sizes.  CfgMgmtCamp.eu is looking for a large number of sponsors for all kinds of different things.
+            The more sponsors we get the more  we can give to our attendees, and since we hope to keep the event free, your contributions both big and small are welcome.
+            More specifically we are looking for  named sponsors for Breakfast , Lunch, Breaks, Social Event, Speakers Dinner, and much more. Email
+            <a href="mailto:info@cfgmgmtcamp.eu">info@cfgmtcamp.eu</a> to sponsor.
+            </li>
+            <li><strong>A web designer/graphic artist</strong>: To make this site better,  graphic/ html wizards, please send your pull requests <a href="https://github.com/cfgmgmtcamp/cfgmgmtcamp.github.io">https://github.com/cfgmgmtcamp/cfgmgmtcamp.github.io</a> 
+            </li>
+          </ul>
+
+          <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHJUWEpJcGVncU92b0NNLW9TR2IyMHc6MA" width="760" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </section>
         <section id="main_content">
+          <p>Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!</p>
 
-            <p>
-            </p>
-
-
-            <p>
-            Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!
-            </p>
-
-
-<a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp  OR #cfgmgmtcamp"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-
+          <a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp  OR #cfgmgmtcamp"</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </section>
         <footer>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
 
-        
+        </footer>
       </div>
     </div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+    <script type="text/javascript">
+      var map = L.map('map').setView([51.505, -0.09], 13);
+
+      L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+          maxZoom: 4
+      }).addTo(map);
+    </script>
   </body>
 </html>
