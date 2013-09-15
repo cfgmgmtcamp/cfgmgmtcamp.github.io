@@ -74,7 +74,6 @@ header {
 }
 
 header .camp-info {
-  float: right;
   margin-right: 10px;
   position: absolute;
   top: 60px;
@@ -435,6 +434,14 @@ footer a:hover {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
+
+@media only screen and (max-width: 543px) {
+  header h1 {
+    background-position: 0 -80px;
+  }
+}
+
+
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   header {
@@ -443,6 +450,14 @@ footer a:hover {
   }
   nav #menu-icon {
     display: block;
+  }
+
+  header .camp-info {
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
   }
 
   nav ul, nav:active ul { 
