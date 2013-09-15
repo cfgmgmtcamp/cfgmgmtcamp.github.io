@@ -253,7 +253,8 @@ a.button span {
   margin-right: 0;
 }
 
-code, pre {
+code, pre,
+.dates {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
   color: #222;
   margin-bottom: 30px;
@@ -266,7 +267,8 @@ code {
   padding: 0 3px;
 }
 
-pre {
+pre,
+.dates {
   padding: 20px;
   background: #303030;
   color: #f2f2f2;
@@ -278,6 +280,16 @@ pre code {
   background-color: #303030;
   border: none;
   padding: 0;
+}
+
+.dates li {
+  padding: 0;
+  list-style: none;
+}
+
+.dates li span {
+  width: 100px;
+  display: inline-block;
 }
 
 ul, ol, dl {
