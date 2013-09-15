@@ -31,7 +31,7 @@
       <li><a href="#contributions">Contributions</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
       <li><a href="#route">Route</a></li>
-      <li><a href="#schedule">Schedule</a></li>
+      <!--<li><a href="#schedule">Schedule</a></li>-->
       </ul>
     </nav>
 
@@ -40,8 +40,8 @@
         <div class="inner">
           <h1>#Cfgmgmtcamp</h1>
           <div class="camp-info">
-            <h2>Config Management Camp</h2>
-            <h2>3 and 4 February 2014</h2>
+            <h2><span class="blue">Config Management</span> <span class="green">Camp</span></h2>
+            <h2><strong>3</strong> and <strong>4</strong> February 2014</h2>
             <h2>Gent, Belgium </h2>
           </div>
         </div>
@@ -89,12 +89,13 @@
           -->
         </section>
 
-        <!-- 
+
         <section id="route">
           <h1>Route</h1>
           <div id="map"></div>
+
+          Valentin Vaerwyckweg 1 9000 Gent <a href="tel://+32 9 243 87 87">+32 9 243 87 87</a> <a href="http://hogent.be">http://hogent.be</a>
         </section>
-        --->
 
         <!-- schedule -->
         <!-- 
@@ -181,7 +182,7 @@
         <section id="main_content">
           <p>Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!</p>
 
-          <a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp  OR #cfgmgmtcamp"</a>
+          <a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp OR #cfgmgmtcamp"</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </section>
         <footer>
@@ -191,12 +192,13 @@
     </div>
 
     <script type="text/javascript">
-      var map = L.map('map').setView([51.505, -0.09], 13);
-
-      L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-          maxZoom: 4
-      }).addTo(map);
+      map = new L.Map('map');
+      osmTile = "http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+      osmCopyright = "Map data &copy; 2013 OpenStreetMap contributors";
+      osmLayer = new L.TileLayer(osmTile, { maxZoom: 18, attribution: osmCopyright } );
+      map.addLayer(osmLayer);
+      L.marker([51.035366, 3.701890]).addTo(map);
+      map.setView( new L.LatLng(51.035366,3.701890), 17 );
     </script>
   </body>
 </html>
