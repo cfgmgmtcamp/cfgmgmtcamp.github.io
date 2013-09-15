@@ -58,10 +58,10 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #2f7ddc;
 }
 a:hover {
-  color: #c5000c;
+  color: #5782ad;
 }
 
 header {
@@ -80,12 +80,16 @@ header .camp-info {
 }
 
 header h1 {
+  width: 528px;
+  height: 71px;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
   font-size: 64px;
   line-height: 64px;
   color: #303030;
   line-height: 1.2;
+  text-indent: -9999px;
+  background: url('../images/logo.png') no-repeat 0 0;
 }
 
 header h2 {
@@ -170,6 +174,7 @@ section {
   margin-bottom: 20px;
   padding: 80px 20px 80px 20px;
   border-bottom: 2px solid #5782ad;
+  border-radius: 5px;
   background: #fff url('../images/hr.png') 50% 0 no-repeat;
   box-shadow: 2px 2px 2px #ccc;
 /*  background: url(http://boardgamesaddict.files.wordpress.com/2010/12/jigsaw-puzzle-psyon.png) repeat fixed;*/
