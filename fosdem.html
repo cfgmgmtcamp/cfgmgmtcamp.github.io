@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <title>Config Management Camp 2014, Gent</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" id="menu-icon"></a>
+      <ul>
+      <li><a href="http://cfgmgmtcamp.eu/#about">About</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#deadlines">Deadlines</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#contributions">Contributions</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/fosdem.html">FOSDEM</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#sponsors">Sponsors</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#route">Location</a></li>
+      <!--<li><a href="#schedule">Schedule</a></li>-->
+      </ul>
+    </nav>
+
+    <div id="container">
+      <header>
+        <div class="inner">
+          <h1>#Cfgmgmtcamp</h1>
+          <div class="camp-info">
+            <h2><span class="blue">Config Management</span> <span class="green">Camp</span></h2>
+            <h2><strong>3</strong> and <strong>4</strong> February 2014</h2>
+            <h2>Gent, Belgium </h2>
+          </div>
+        </div>
+      </header>
+
+      <div class="inner">
+        <section id="about">
+          <h1 id="about">FOSDEM Configuration Management Devroom</h1>
+          <p>
+          The Configuration Management Devroom is taking place at <a href="https://fosdem.org">FOSDEM</a> in Brussels on <strong>Saturday, February 1</strong> the weekend before <a href="http://cfgmgmtcamp.eu/">CfgMgmtCamp.eu</a>.
+          </p>
+          <p>We are looking for talks from real world case studies, brainstorming and hacking around configuration and systems management from complex virtual environments and cloud computing to desktops and laptops. There is huge interest in automation, monitoring, performance management, configuration management, and DevOps.  We are looking for presentations from people who are working in the field on these topics:
+<ul>
+	<li>Configuration and Systems Management theory & principles</li>
+	<li>Configuration and Systems Management tools - with an emphasis on
+real world use cases</li>
+	<li>Techniques and case studies</li>
+	<li>Audit, Compliance and Security</li>
+	<li>Various DevOps topics, including collaboration and training tips.</li>
+</ul></p>
+
+            <p>
+          Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!
+          </p>
+</section>
+
+        <section id="submit">
+          <h1 id="about">Submit a FOSDEM Devroom Talk</h1>
+             <p>They are asking everyone to
+use Pentabarf for submissions this year. Here's what you need to do to submit a talk to the Configuration Management Devroom:
+             <ul>
+		<li>Go to <a href="https://penta.fosdem.org/submission/">the FOSDEM submission page</a>.</li>
+                <li>Select FOSDEM 2014</li>
+                <li>Follow the instructions to submit a talk</li>
+		<li>Select "Configuration management devroom" as the "track".</li>
+		<li>Propose your session.</li>
+	    </ul>
+</section>
+        </section>
+
+        <section id="deadlines">
+          <h1>Devroom Deadlines</h1>
+
+          <ul class="dates">
+            <li><span>1/12/2013</span> : Devroom CFP Ends</li>
+            <li><span>13/12/2013</span>   : Speakers notified</li>
+            <li><span>30/12/2013</span>   : Agenda published on FOSDEM site</li>
+            <li><span>1/2/2014</span> : Configuration Management Devroom starts</li>
+          </ul>
+
+<p>See the main <a href="http://cfgmgmtcamp.eu/">CfgMgmtCamp.eu page</a> for more deadlines</a>.</p>
+        </section>
+
+
+        <footer>
+
+        </footer>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      map = new L.Map('map');
+      osmTile = "http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+      osmCopyright = "Map data &copy; 2013 OpenStreetMap contributors";
+      osmLayer = new L.TileLayer(osmTile, { maxZoom: 18, attribution: osmCopyright } );
+      map.addLayer(osmLayer);
+      L.marker([51.035366, 3.701890]).addTo(map);
+      map.setView( new L.LatLng(51.035366,3.701890), 17 );
+    </script>
+  </body>
+</html>
