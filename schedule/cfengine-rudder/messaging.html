@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/print.css" media="print" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link rel="shortcut icon" href="http://cfgmgmtcamp.eu/favicon.ico">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <title>Config Management Camp 2016, Gent</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#" id="menu-icon">&#x2261;</a>
+    <ul>
+      <li><a href="http://cfgmgmtcamp.eu/#about">About</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#registration">Registration</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#sponsors">Sponsors</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#route">Location</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/#contributions">Contributions</a></li>
+      <li><a href="code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="http://cfgmgmtcamp.eu/2014/">2014</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <header>
+      <div class="inner">
+        <h1>#cfgmgmtcamp</h1>
+        <div class="camp-info">
+          <h2><strong>1</strong> and <strong>2</strong> February 2016</h2>
+          <h2>Gent, Belgium </h2>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="inner">
+      <section id="content">
+        <h1>Messaging CFEngine and Data</h1>
+        <h3>Martin Simons - Monday, February 1, 16:20-17:00 - B3.036</h3>
+        <p>
+	<blockquote  cite="http://lists.zeromq.org/pipermail/zeromq-dev/2011-February/009491.html">
+	what would be killer is a combination of the latest cfengine 
+	(with promise theory) and 0mq. 
+        </blockquote>
+
+	It is the objective to have messaging incorporated in CFEngine and thus 
+	enabling nodes, by cf-agent that is, to send out messages to whatever 
+	listeners out there. The listeners can be cf-messages daemons or other 
+	nodes configured to process messages delivered by CFEngine Nodes. 
+	CFEngine will need to implement a new promise type: messages:. 
+
+	A presentation of a prototype of a CFEngine Messaging system, using 0mq, 
+	in which the agents collect relevant data from a source in order to use 
+	that data to automagically configure services. 
+
+	Other Messaging Systems are considered too, by the messages. promise-type. 
+
+	Please find: 
+	<a href=http://wiki.webhuis.nl/index.php/Cfengine3_Messaging>http://wiki.webhuis.nl/index.php/Cfengine3_Messaging</a>
+	<a href=http://wiki.webhuis.nl/index.php/Data>http://wiki.webhuis.nl/index.php/Data</a>
+
+        </p>
+
+        <h2>About Martin Simons</h2>
+        <p>
+          <img src='../../images/Martin-Simons.png' width='150' height='150' style='float:right; padding-left:20px;' />
+	  Martin initiated the Debian-team in June 2013 and as a result we are now having an up to date and state of the art Debian Standards compliant CFEngine3 3.6.2. in the Debian Jessie repository.
+
+	  He did the successful CFEngine Enterprise implementation at DirecTV in the beginning of 2014. He now is the driving force behind The CFEngine Roadshow, the open source show case of a complete CFEngine solution. He is a member of the International CFEngine Community support team.
+
+	  He is happily living with his wife being a proud father of three daughters who left home to study at universities all over the country. The opportunity is to be able to spend more CFEngine time!
+        </p>
+
+        <p>
+          <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/Webhuis"></a>
+          <a class="fa fa-github-square fa-2x" href="https://github.com/webhuis"></a>
+        </p>
+
+      </section>
+    </div>
+  </div>
+</body>
+</html>
