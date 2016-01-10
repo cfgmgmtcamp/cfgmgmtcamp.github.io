@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/print.css" media="print" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link rel="shortcut icon" href="http://cfgmgmtcamp.eu/favicon.ico">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <title>Config Management Camp 2016, Gent</title>
+</head>
+
+<body>
+    <nav>
+      <a href="#" id="menu-icon">&#x2261;</a>
+      <ul>
+      <li><a href="#about">About</a></li>
+      <li><A href="#news">News</a></li>
+      <li><a href="#registration">Registration</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#route">Location</a></li>
+      <li><a href="#contributions">CFP</a></li>
+      <li><a href="code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="2014/">2014</a></li>
+      <li><a href="2015/">2015</a></li>
+      </ul>
+    </nav>
+
+  <div id="container">
+    <header>
+      <div class="inner">
+        <h1>#cfgmgmtcamp</h1>
+        <div class="camp-info">
+          <h2><strong>1</strong> and <strong>2</strong> February 2016</h2>
+          <h2>Gent, Belgium </h2>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="inner">
+      <section id="content">
+        <h1>Key Signing Party</h1>
+
+        <p>In tradition with other FOSS events we'll be holding a PGP Key
+        Signing Party (KSP) this year. By holding a KSP we strengthen
+        the Web of Trust (WoT) and allow community members that are
+        likely already in contact with each other to exchange signatures.</p>
+
+        <p>If you've ever been to a KSP before (like the one at FOSDEM) you'll
+        be familiar with the protocol. Here's how this is going to work:</p>
+        <ul>
+          <li>Upload your key to the <a href="https://sks-keyservers.net">GnuPG/sks-keyservers</a> pool of keyservers</li>
+          <li>Send an email to cfgmgmtcampksp@tutanota.com with:
+            <ul>
+              <li>subject: KSP</li>
+              <li>body: <code>gpg --fingerprint mykey</code></li>
+              <li>deadline: Wednesday the 19th of January 2016</li>
+            </ul></li>
+          <li>You bring with you on the day of the KSP:
+            <ul>
+              <li>One government issued photo ID (passport or ID, drivers license does not count).</li>
+              <li><strong>Optional:</strong> One other form of ID (drivers license, security badge, etc.).</li>
+              <li>A piece of paper with your &lt;0xlongkeyid&gt;, &lt;fingerprint&gt; and &lt;keysize&gt;.</li>
+              <li>Two pens, one for you and one for the person next to you that will have forgotten to bring theirs.</li>
+              <li>A copy of the document we'll use at the KSP and the <code>SHA256</code> hash of that document that you will compute yourself. We will provide the final list on Friday the 29th of January. Watch inbox, this site and Twitter for the URL.</li>
+            </ul></li>
+            <li>You <strong>do not</strong> use your computer. The actual signing will be done later, we're just here to verify each other otherwise this would take hours.</li>
+        </ul>
+        <p>On the day of the KSP we will:</p>
+        <ul>
+          <li>Individually verify that the key/fingerprint/size listed for oneself in the document is correct.</li>
+          <li>One of the organisers reads out the checksum of the document, verify you have the same.</li>
+          <li>Form a line in the order of the list of keys (this speeds verification up).</li>
+          <li>Split the line in two by folding it on itself so everyone faces someone else.</li>
+          <li>Verify the identity of the person opposite to you, tick the box once you're satisfied and then move on to the person on your right.</li>
+          <li>When you find yourself at the end of the queue turn around and move to the opposite queue. Eventually you'll have seen and verified everyone.</li>
+        </ul>
+
+        <p>Once we've completed the conga everyone will have verified
+        everyone. At this point we're done. You take your list with you
+        home or to your hotel, fetch the keys you want to sign, sign
+        them and then either:</p>
+        <ul>
+          <li>Send the key back to the keyservers;</li>
+          <li>Export the signed key, encrypt it with the recipients encryption key and send it to them. This the the paranoia edition and can be used to additionally verify ownership of the e-mail account associated with a UID, if any. If the person has multiple UIDs you should do this dance separately for every UID.</li>
+        </ul>
+
+        <p>When possible, email the person that you've signed their
+        key or ping them on IRC/Twitter etc.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
