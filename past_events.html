@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <title>Config Management Camp </title>
+  </head>
+
+<body>
+  <nav>
+    <a href="#" id="menu-icon">&#x2261;</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="past_events.html">Past Events</a></li>
+    </ul>
+  </nav>
+
+    <div id="container">
+      <header>
+        <div class="inner">
+          <h1>config management camp</h1>
+        </div>
+      </header>
+
+      <div class="inner">
+        <section id="past_events">
+          <h1>Previous Config Management Camps</h1>
+          <ul>
+            <li><a href="/2014/">2014 - Gent</a></li>
+            <li><a href="/2015/">2015 - Gent</a></li>
+            <li><a href="/gent-2016/">2016 - Gent</a></li>
+          </ul>
+
+          <h2>Future Config Management Camps</h2>
+          <ul>
+            <li><a href="/berlin-2016">15 November 2016 - Berlin</li>
+            <li><a href="/gent-2017">2017 - Gent</li>
+          </ul>
+        </section>
+
+      <section id="about">
+        <p>
+          Follow <a href="https://twitter.com/cfgmgmtcamp/">@cfgmgmtcamp</a> on Twitter to get updates!
+        </p>
+
+
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=cfgmgmtcamp++OR+%23cfgmgmtcamp"  data-widget-id="355799269103521792">Tweets about "cfgmgmtcamp OR #cfgmgmtcamp"</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </section>
+    </div>
+
+    <script type="text/javascript">
+      map = new L.Map('map');
+      osmTile = "http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+      osmCopyright = "Map data &copy; 2013 OpenStreetMap contributors";
+      osmLayer = new L.TileLayer(osmTile, { maxZoom: 18, attribution: osmCopyright } );
+      map.addLayer(osmLayer);
+      L.marker([51.035366, 3.701890]).addTo(map);
+      map.setView( new L.LatLng(51.035366,3.701890), 17 );
+    </script>
+  </body>
+</html>
