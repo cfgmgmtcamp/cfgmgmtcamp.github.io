@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <title>Config Management Camp Berlin 2016</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" id="menu-icon">&#x2261;</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#route">Location</a></li>
+        <!--
+        <li><a href="schedule/index.html">Schedule</a></li>
+        -->
+        <li><a href="#contributions">CFP</a></li>
+        <li><a href="/code_of_conduct.html">Code of Conduct</a></li>
+        <li><a href="/past_events.html">Past Events</a></li>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <header>
+        <div class="inner">
+          <h1>config management camp</h1>
+          <div class="camp-info">
+            <h2><strong>November 15</strong></h2>
+            <h2>Berlin, Germany</h2>
+          </div>
+        </div>
+      </header>
+
+      <div class="inner">
+  <h1>Talks: </h1>
+      <section id="dawn">
+        <h1>Opening Keynote : Dawn Foster: Config Management Community: Awesome, Awful or Apathetic?</h1>
+
+<p></p>
+<p>About Dawn: </p>
+<p>
+</p>
+
+
+
+      </section>
+      <section id="spencer">
+          <h1>Spencer Krum : Code Review for Operations</h1>
+<p>
+Code review has been shown to help developers produce better code. It can also help operations teams run more reliable systems. Our ops team is fanatic about using code review and representing our infrastructure as code so that code review can be leveraged. In this presentation I will show how we use code review to manage our infrastructure, modify and create systems, administer services, etc. I'll discuss why we use code review for our operations work, and where we get value from it. I'll show the path we took to get here, what actions couldn't be piped through code review, and what we're going to next. I'll also dive into the human behaviors that I've seen emerge out of organizations that do this.
+</p>
+<p>About Spencer</p>
+pencer (nibalizer) Krum (http://spencerkrum.com) has been sysoping Linux since 2010. He works for IBM contributing upstream to OpenStack and Puppet. Spencer is a core contributor to the OpenStack Infrastructure Project. Spencer coordinates the local DevOps user group in Portland and volunteers for an ops-training program at Portland State University called the Braindump. Spencer is a published author and frequent speaker at technical conferences. Spencer is a maintainer for the voxpupuli effort(https://voxpupuli.org), which attempts to bring together a network of Puppet developers, modules, and infrastructure.
+
+Spencer lives and works in Portland, Oregon where he enjoys tennis, cheeseburgers and StarCraft II.
+
+<p>
+</p>
+
+      </section>
+      <section id="nacho">
+          <h1>Nacho Barrientos : Configuration Management at CERN</h1>
+<p>The CERN IT department provides Puppet-powered configuration management services to LHC experiments and to the department itself for more than 22,000 physical and virtual machines in two data centres. This presentation will give an overview of the current deployment (figures and CERN specials), how we monitor the service and the challenges ahead.</p>
+<p>About Nacho: </p>
+
+<p>
+cho Barrientos is a computer engineer who's currently working for CERN IT's Configuration Management team. Along with his colleagues, he's been driving the deployment of several components (Puppet masters, Foreman, PuppetDB...) in the CERN ecosystem and tweaking them so they can cope with the scalability and availability requirements of the various services provided by the department.
+</p>
+
+      </section>
+      <section id="nathen">
+          <h1>Nathen Harvey : Beyond Infrastructure Automation</h1>
+<p>We focus on our app code as the origin of business value. Anyone that's ever run apps in prod knows that no value is possible without the entire stack. DevOps has taught us to think about our app stacks holistically.  It's time we shift our thinking to an app-centric view of the world.
+
+This talk will be an introduction to Habitat, the open source projects that let's use build, deploy, and manage applications.  The automation is part of and moves with the automation.
+
+</p><p>About Nathen: </p>
+<p>
+Nathen Harvey, VP of Community Development at Chef, helps the community whip up an awesome ecosystem built around the Chef platform. Nathen also spends much of his time helping people learn about the practices, processes, and technologies that support DevOps, continuous delivery, and high velocity organizations. Prior to joining Chef, Nathen spent a number of years managing operations and infrastructure for a diverse range of web applications. Nathen is a co-host of the Food Fight Show, a podcast about Chef and DevOps.
+",https://www.habitat.sh
+</p>
+
+      </section>
+      <section id="james">
+          <h1>James Shubin : Next Generation Config Management</h1>
+<p>
+A presentation about a next gen config management tool, and the specific problems this project solves.
+
+Three of the main design features of the tool include:
+<ul>
+<li> Parallel execution
+<li> Event driven mechanism
+<li> Distributed architecture
+</ul>
+
+This talk will demo a prototype I've built that implements these ideas and which is written in golang.
+I will start by presenting an introduction to the tool.
+I will then demo the new features that were added since the project was introduced. This will include the automatic grouping, automatic elastic etcd clustering and remote execution features.
+I will finally share some of the future planned designs for the tool.
+</p>
+<p>About James: </p>
+<p>
+James is a DevOps/Config mgmt. hacker and physiologist from Montreal, Canada. He often goes by @purpleidea on the internet, and writes ""The Technical Blog of James"".
+He currently works for Red Hat doing research and prototyping within systems engineering.
+He started a Next Generation Config Management prototype called mgmt.
+He studied Physiology at university and sometimes likes to talk about cardiology.
+</p>
+
+      </section>
+      <section id="dirk">
+          <h1>Dirk Götz : Foreman - More than just a Puppet dashboard</h1>
+<p>
+ore than just a Puppet dashboard,"This talk will give an overview on Foreman's Puppet Integration and the state of the integration of other Config management solutions (Ansible, Salt, Chef). It will introduce the Provision capabilities of Foreman and its addons like the Discovery Plugin for Metal as a Service. Furthermore some Plugins will be shown which extend Foreman's feature set like Orchestration using the Remote Execution Plugin.
+</p>
+<p>About Dirk</p>
+<p>
+Dirk Götz is working as Senior Consultant and Trainer for NETWAYS. As part of his daily work he writes concepts, implements, reviews and teaches Puppet and Foreman in many different environments. He created a training course based on Open Source Puppet for his employer and the official Foreman Training as corporate project of NETWAYS and the Foreman Project
+</p>
+
+      </section>
+      <section id="eric">
+          <h1>Eric Sorenson : "Open Source, Open Communities: Maintainership and Contribution in 2016</h1>
+<p>
+arge open-source projects are changing the way they operate to reflect changes in maintainership and contribution patterns. Improvements in GitHub, test frameworks, and communication tools like chatops have made parts of OSS easier... and others way harder. In this talk, I'll walk through the evolution of our contribution and community processes on Puppet and its related projects over the last several years, to examine our successes -- and a few notable failures. I'll close with some ideas and suggestions, both to help maintainers improve the quality and quantity of their contributions, and to help both new and seasoned contributors have a great experience working on open-source projects.
+</p><p>About Eric: </p>
+<p>
+Eric Sorenson has been working in systems administration since 28.8k modems were exotic luxuries. After running campus networks, large scale production internet services, and sysadmin teams, he moved to Portland in 2012 to work at Puppet as technical product manager for Puppet's core technology platform. When he's not grooming backlogs or referring to himself in the third person, he's out exploring Oregon's trails by foot and bicycle.
+</p>
+
+      </section>
+      <section id="ricardo">
+          <h1>Ricardo Carrillo Cruz :  Ansible-based CI with Zuul </h1>
+<p>
+The OpenStack Infra team runs one of the world's largest and craziest
+CI infrastructures. In service of our community, we have recently
+replaced our fleet of Jenkins masters that were connected to Zuul v2
+via a Gearman system with Zuul v3 and Ansible. In the process, we also
+added a bunch of other fun features like support for static bare
+metal, container orchestration engines and per-repo job config. If
+replacing Jenkins with Ansible sounds crazy to you, that's cool - come
+anyway and we'll see if we can't convince you it was a good idea. If
+replacing Jenkins with Ansible sounds awesome, you're right - it is!
+We can talk about all the super cool things we can do... and how you
+can do them too.
+</p>
+<p>About Ricardo</p>
+<p>
+Ricardo works at HPE as a full-time OpenStack upstream engineer.
+
+He is a core member of the OpenStack Infrastructure team, responsible for the infrastructure systems that are used daily by the OpenStack project. He is also a maintainer of the Ansible OpenStack modules.
+
+Previously he worked as an infrastructure engineer on the HPE Helion CI platform, where he designed, maintained and operated the systems used by all the HPE Helion engineers.
+
+He lives at Marbella (Spain), with his lovely wife Luisa, his beloved son Mario and his supercute dogs Duque and Nemo.
+
+
+</p>
+      </section>
+      <section id="ignites">
+          <h1>Ignites </h1>
+
+          <h2>Felix Frank: mgmt and puppet - better together</h2>
+<p>
+One of the latest entries in the field of config management tools is mgmt (also known as mgmtconfig). It is in the alpha stage, and while most of its innovative features are available already, it still lacks its own programming language.
+</p><p>
+
+As a stop-gap, it is now possible to control the tool through Puppet manifests. This presentation shows how this works, highlighting the specific differences between the concepts of Puppet vs. mgmt.","Felix is a long-time core user of Puppet, has contributed a number of fixes and features, and wrote a beginner's title about the tool. Recently, he concentrated on the enhancements that allow Puppet to work closely with mgmt, as well as actual Go code for the new project itself.
+
+</p><p>
+about Felix: 
+</p><p>
+A resident of Berlin, Felix spends much of his time hacking, but also likes cooking, eating, and cycling.",The puppet-mgmt translator module: https://forge.puppet.com/ffrank/mgmtgraph,
+</p>
+
+          
+<h2>Marco Ceppi : CTA: Share your operations </h2>
+<p>
+This is a call to arms. We need to stop thinking that the chef recipe or puppet script, playbook, etc makes your special. Your operations aren't special if you're the only one who can use this.
+
+My talk is to press further on the idea that we need to start sharing with each other how to best setup kibana, hadoop, kubernetes, elastic search - and do this in a way that's truly resuable. In a way everyone benefits, including you.
+</p>
+<p>About Marco</p>
+<p>
+Marco Ceppi is a DevOps engineer with a passion for OpenSource, automation, and smarter not harder. When not mashing a keyboard he enjoys restoring cars, sailing, and
+
+</p>
+      </section>
+
+
+  </body>
+</html>
