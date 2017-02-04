@@ -52,18 +52,15 @@
 
     <div class="inner">
       <section id="content">
-        <h1>Open Big Data Infrastructures for Everyone</h1>
+        <h1>Operator Track: Distributed Systems CI</h1>
         <h3>Tuesday, February 7, 14:40 - B4.039</h3>
-        <p>The evolution of big data has increased the complexity of the respective software. Big data infrastructures require progressively more time and effort to setup, configure, maintain and integrate with existing systems. In absence of a big data "expert", users are often discouraged from using such solutions.  The option of consuming big data infrastructures as a service seems to be a viable one, yet it is not without drawbacks. Such an option a) is costly, b) often locks users down to a vendor, and c) is limited to what the vendor decides to make available.</p>
+        <p>As we move away from monoliths and applications become more specialized the solution also gets more complex and interconnected. We need to test the solution on different infrastructure from bare metal to public cloud. On top of that we need to test the solution at different scales and configurations. Once we got that settled we need to make changes to the solutions and ensure not only individual applications keep functioning but the entire solutions still works as expected. Bonus if we can measure performance in each iteration.</p>
         
-        <p>In this talk, we present Juju, an open source service modelling approach by Canonical that addresses the above shortcomings.  With Juju users can deploy and maintain their infrastructures to a rich variety of target environments that include almost any cloud, local machines (using containers & VMs), bare metal systems and any remote machine the user might have ssh access to. The Juju big data community makes sure that deploying big data infrastructures is as simple as running "juju deploy hadoop", while interfaces among infrastructures allow for easy system integration. We also show how the operational knowledge of complex software such as Apache Spark can be encapsulated in a few hundreds lines.</p>
+        <p>In this talk we will discuss how we can deploy and test the operations of complex interconnected solutions on varying infrastructure. Furthermore, we will outline how to test and benchmark the solution on each change [commit] to determine if the change should be rolled forward or reverted. Attendees will have the knowledge and code to deploy their own CI system for distributed systems.</p>
        
         <p>
         <ul>
-            <li>Konstatinos Tsakalozos is currently employed by Canonical Ltd on the Juju Big Software team. Prior to this, he worked on Big Data for Microsoft. He holds a Ph.D. on IaaS cloud resource allocation from the Department of Informatics at the University of Athens. His interests include cloud computing, distributed architectures and multidimensional indexing.</li>
-
-            <li>Kevin Monroe joined Canonical Ltd in 2014 with his focus set on modeling workloads at scale. He found his niche on the Juju Big Software team, where his mission is to capture the often cumbersome operational knowledge of Big Data services (Hadoop, Spark, Kafka, etc) into reliable, repeatable, real world solutions.</li>
- 
+            <li>Pete Vander Giessen is a member of the Juju Big Software team at Canonical. In years prior, he was involved in several Big Data focused startups, as well as building database infrastructure for IBM's cloud computing efforts. He has been a DevOps person since the term was invented, with a special interest in wrangling large datasets, and managing tricky testing infrastructure.</li>
         </ul>
         </p> 
         <p>
