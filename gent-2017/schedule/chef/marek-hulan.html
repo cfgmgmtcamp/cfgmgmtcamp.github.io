@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <title>Config Management Camp Gent 2017</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#" id="menu-icon">&#x2261;</a>
+    <ul>
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#news">News</a></li>
+      <li><a href="../../index.html#registration">Registration</a></li>
+      <li><a href="../../index.html#sponsors">Sponsors</a></li>
+      <li><a href="../../index.html#route">Location</a></li>
+      <li><a href="../../schedule/index.html">Schedule</a></li>
+      <li><a href="../../code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="../../past_events.html">Past Events</a></li>
+    </ul>
+  </nav>
+  <div id="container">
+    <header>
+      <div class="inner">
+        <h1>#cfgmgmtcamp</h1>
+        <div class="camp-info">
+          <h2><strong>6</strong> and <strong>7</strong> February 2017</h2>
+          <h2>Gent, Belgium </h2>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="inner">
+      <section id="content">
+        <h1>Foreman templating engine - best practises and future</h1>
+        <h3>Marek Hulán - Monday, Feb 6, 15:40 - 16:20 - B2.015</h3>
+
+        <p>In this talk about Foreman templating engine, I'd like to show some
+        tips how to write templates in a way they are readable, less prone to
+        errors and compatible with future versions of Foreman. Also I'd like to
+        show some debugging techniques. I'll explain what safe mode is and what
+        are consequences of disabling it. Demo will also cover popular
+        foreman_templates plugin. I plan to show how it can be used to manage
+        templates using git and cover recently added features. At the end I'd
+        like to discuss current limitations and sketch possible improvements
+        like formalisation of template inputs and replacing internal object
+        usage with more macros.</p>
+
+        <h1>How to get the most of Foreman and Chef</h1>
+        <h3>Marek Hulán - Tuesday, February 7, 15:40 - 16:20 - B3.019</h3>
+        <p>
+          In this talk I'd like to explain what benefits users can get by using
+          powerful combination of Foreman and Chef. After short introduction to
+          Foreman, I'll demonstrate how easily we can deploy a new host and plug
+          it into Chef infrastructure.
+        </p>
+
+        <p>
+          Demo will contain monitoring infrastructure in Foreman based on data
+          coming from Chef, investigating reports from previous client runs,
+          manipulating the client runlist from Foreman UI, using Foreman
+          parameter system in cookbooks in combination with Chef attributes, on
+          demand triggering of client runs on multiple hosts through Foreman
+          remote execution plugin.
+        </p>
+
+        <p>
+          <a href="https://ares.github.io/presentations/foreman_and_chef/index.html#1">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <strong>Slides are available on GitHub</strong>.
+          </a>
+        </p>
+
+        <h2>About Marek Hulán</h2>
+        <p>
+          <img src='../../images/ares.jpeg' width='150' height='150' style='float:right; padding-left:20px;' />
+          Marek is software engineer in RedHat working on Foreman project. He
+          worked on Foreman installer framework called Kafo, networking
+          provisioning through Foreman templates, and recently remote execution
+          plugin allowing automation of tasks that does not fit into
+          configuration management. In his free time he works on Chef
+          integration with Foreman.
+        </p>
+
+        <p>
+          <!-- <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/twitter"></a> -->
+          <a class="fa fa-github-square fa-2x" href="https://github.com/ares"></a>
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

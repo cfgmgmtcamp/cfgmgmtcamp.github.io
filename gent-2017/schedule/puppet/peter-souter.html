@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <title>Config Management Camp Gent 2017</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#" id="menu-icon">&#x2261;</a>
+    <ul>
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#news">News</a></li>
+      <li><a href="../../index.html#registration">Registration</a></li>
+      <li><a href="../../index.html#sponsors">Sponsors</a></li>
+      <li><a href="../../index.html#route">Location</a></li>
+      <li><a href="../../schedule/index.html">Schedule</a></li>
+      <li><a href="../../code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="../../past_events.html">Past Events</a></li>
+    </ul>
+  </nav>
+  <div id="container">
+    <header>
+      <div class="inner">
+        <h1>#cfgmgmtcamp</h1>
+        <div class="camp-info">
+          <h2><strong>6</strong> and <strong>7</strong> February 2017</h2>
+          <h2>Gent, Belgium </h2>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="inner">
+      <section id="content">
+        <h1>Compliance and auditing with Puppet</h1>
+        <h3>Peter Souter - Monday, Feb 6, 14:40 - 15:20 - B1.015</h3>
+
+        Puppet is a perfect fit for compliance: you model desired compliant state, continually enforce it and have a full audit path of when changes occur and what lead to the drift. But what are the best practises for using Puppet for compliance, what are the caveats, how do you scan for issues and how can you keep the auditors happy?
+
+        </p><p>
+        If you work with or at a Telco, Financial Institution or a Government entity, you probably already know about compliance and the various acronyms and headaches it can bring.
+        </p><p>
+
+        How can we make this less of a painful process?
+        </p><p>
+
+        Well, if you think about it: compliance is a set of rules that someone has given you to enforce and prove that they're being enforced.
+
+        What is Puppet? A series of rules for systems that need to be enforced.
+
+        So compliance is the perfect use-case for configuration management.
+        </p><p>
+
+        We'll be discussing:
+        <ul>
+        <li>How you can enforce compliance in your estate with Puppet</li>
+        <li>The difference between using dedicated compliance Puppet modules and leveraging your current modules</li>
+        <li>Using the baseline_compliance catalog terminus</li>
+        <li>Custom facts for compliance checking</li>
+        <li>What tools for scanning work well with Puppet</li>
+        </ul>
+        </p><p>
+
+        <h4><a href="http://www.slideshare.net/petems/compliance-and-auditing-with-puppet">Slides</a><h4>
+
+        </p><p>
+        </p><p>
+
+        <h1>Knee deep in the undef: Tales from refactoring old Puppet codebases</h1>
+        <h3>Peter Souter - Tuesday, Feb 7, 15:40 - 16:00 - B1.015</h3>
+        <p>
+          As Puppet pushes into it’s second decade, there are several organisations out there that have been using Puppet for a long time. <br><br>
+
+With the EOL announcement of the 3.X release, there are a number of people looking to upgrade, both community and customers. Normally the upgrade of the architecture is ok, it’s the code base that gives the biggest challenge, especially those with multiple years of organic growth.<br><br>
+
+You quickly learn what hacky solutions that seemed good at the time will come back to bite you.<br><br>
+
+We’ll be talking about how Hiera is both the best and worst thing to happen to Puppet, marvel at how people were happily running 0.25.4 in Puppet in production in 2016.<br><br>
+
+By the end of this, you’ll hopefully have learnt how to make sure that your Puppet code is healthy for the next decade*<br><br>
+
+*No guarantees!
+        </p>
+
+        </p><p>
+
+        <h4><a href="http://www.slideshare.net/petems/knee-deep-in-the-undef-tales-from-refactoring-old-puppet-codebases">Slides</a><h4>
+
+        </p><p>
+        </p><p>
+
+        <h2>About Speaker</h2>
+        <p>
+          <img src='https://avatars0.githubusercontent.com/u/1064715?v=3&s=400' width='150' height='150' style='float:right; padding-left:20px;' />
+          Peter is a Senior Professional Services Engineer at Puppet. He's tinkering with DevOps tooling for about 6 years and finds that listening to Bonobo increases his work output 50%.
+        </p>
+        <p>
+          <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/petersouter"></a>
+          <a class="fa fa-github-square fa-2x" href="https://github.com/petems"></a>
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

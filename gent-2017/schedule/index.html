@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <title>Config Management Camp Gent 2017</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#" id="menu-icon">&#x2261;</a>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#news">News</a></li>
+      <li><a href="../index.html#registration">Registration</a></li>
+      <li><a href="../index.html#sponsors">Sponsors</a></li>
+      <li><a href="../index.html#route">Location</a></li>
+      <li><a href="../schedule/index.html">Schedule</a></li>
+      <li><a href="../code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="../past_events.html">Past Events</a></li>
+    </ul>
+  </nav>
+  <div id="container">
+    <header>
+      <div class="inner">
+        <h1>#cfgmgmtcamp</h1>
+        <div class="camp-info">
+          <h2><strong>6</strong> and <strong>7</strong> February 2017</h2>
+          <h2>Gent, Belgium </h2>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="inner">
+      <section id="content">
+        <p><b>This schedule is a work in progress</b> and should not be considered final, we are still waiting for confirmation  from a number of speakers.</p>
+        <p>
+          <a name='main'></a>
+          The schedule includes a <a href='#main'>main track</a>,
+          <a href='#general'>general sessions</a>, and
+          <a href='#communities'>community rooms</a> for
+          <a href='#ansible'>Ansible</a>, <a href='#cfengine'>CFEngine</a>,
+          <a href='#chef'>Chef</a>, <a href='#foreman'>Foreman</a>,
+          <a href='#juju'>Juju</a>, <a href='#kube'>kubernetes</a>,
+          <a href='#mgmt'>mgmt</a>, <a href='#puppet'>Puppet</a>,
+          <a href='#rudder'>Rudder</a>, and <a href='#salt'>Salt</a>.
+        </p>
+        <p>
+          There are also a number of <a href="#fringe">Fringe events</a> being
+          hosted on Wednesday, February 8.
+        </p>
+
+        <h1>Main Track</h1>
+        <h3>D.AUD</h3>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>10:00 - Welcome</li>
+              <li>10:20 - <a href="main/john-vincent.html">Configuration Management is a Solved Problem?</a> - John Vincent </li>
+              <li>11:00 - Break</li>
+              <li>11:20 - <a href="main/hannah-foxwell.html">Resilient Systems Require Resilient People</a> - Hannah Foxwell</li>
+              <li>12:00 - <a href="ignites.html">Ignite Talks</a></li>
+              <li>12:40 - Lunch</li>
+              <li>14:00 - <a href="main/gareth-rushgrove.html">What's Inside that Container ?</a> - Gareth Rushgrove </li>
+              <li>14:40 - <a href="main/henrik-lindberg.html">The Truth and Nothing But the Truth, why type systems matters to configuration management</a> - Henrik Lindberg</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="main/adam-israel.html">Generic VNF configuration management and orchestration</a> - Adam Israel</li>
+              <li>16:20 - <a href="main/patrick-debois">Code will come, Servers will go, but Config stays forever</a> - Patrick Debois</li>
+              <li>17:00 - <a href="main/walter-heck.html">Docker is the new tarball</a> - Walter Heck</li>
+              <li>18:00 - Social Event</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>10:00 - <a href="main/kief-morris.html">Implementing Infrastructure as Code</a> - Kief Morris </li>
+              <li>10:40 - Break</li>
+              <li>11:00 - <a href="main/martin-simons.html">Economics and Politics of Config Management</a> - Martin Simons </li>
+              <li>11:40 - <a href="main/annie-hedgpeth.html">My Journey Into Technology Through InSpec</a> - Annie Hedgpeth</li>
+              <li>12:20 - <a href="main/tom-barber.html">Getting data to the end user quickly</a> - Tom Barber  </li>
+              <li>13:00 - Lunch</li>
+              <li>14:00 - <a href="main/george-miranda.html">Operating Systems are Assholes</a> - George Miranda</li>
+              <li>14:40 - <a href="main/benoit-peccatte.html">Automate quality just like you automate servers</a> - Benoît Peccatte</li>
+              <a name="general"></a>
+              <li>15:20 - Break</li>
+              <a name="containers"></a>
+              <li>16:20 - <a href='foodfightshow.html'>Food Fight Show</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h1>General Sessions</h1>
+        <h2>Containers / Orchestration</h2>
+        <h3>B.CON</h3>
+        <p>
+          <strong>Monday, February 6</strong>
+        </p>
+        <ul>
+          <li>11:20 - <a href="containers/james-nugent.html">Building self-healing, self-assembling systems in AWS</a> - James Nugent</li>
+          <li>12:00 - <a href="containers/paul-bellamy.html">How I Learned to Stop Worrying and Love the Container</a> - Paul Bellamy</li>
+          <li>12:40 - Lunch</li>
+          <li>14:00 - <a href="containers/michael-ducy.html">Monoliths, Myths, and Microservices</a> - Michael Ducy</li>
+          <li>14:40 - <a href="containers/sebastien-goasguen.html">Going serverless with Kubernetes ?</a> - Sebastien Goasguen</li>
+          <li>15:20 - Break</li>
+          <a name="future"></a>
+          <li>15:40 - <a href="containers/donnie-berkholz.html">Cloud Native in the Enterprise: Real-World Data on Container and Microservice Adoption</a> - Donnie Berkholz
+           <!-- <a href="containers/christophe-furmaniak.html">Containers, runtime environments and configuration</a> - Christophe Furmaniak -->
+             </li>
+          <li>16:20 - <a href="containers/ian-henry.html">An upside-down Exploration of App Automation with Habitat</a> - Ian Henry</li>
+          <li>17:00 - <a href="containers/jorge-salamero.html">Troubleshooting Kubernetes </a>- Jorge Salamero</li>
+        </ul>
+
+        <h2>Future Tooling</h2>
+        <h3>B.CON</h3>
+        <p>
+          <strong>Tuesday, February 7</strong>
+        </p>
+        <ul>
+          <li>11:00 - <a href="future/james-shubin.html">Mgmt Config : Autonomous systems</a> - James Shubin</li>
+          <li>11:40 - <a href="future/uchit-vyas.html">Can we have Self-healing Engine ?!</a> - Uchit Vyas</li>
+          <li>12:20 - <a href="future/david-lutterkort.html">Libral: towards a systems management API for Linux</a> - David Lutterkort</li>
+          <li>13:00 - Lunch</li>
+          <li>14:00 - <a href="future/bart-vanbrabant.html">Next-generation infrastructure as code with Inmanta</a> - Bart Van Brabant</li>
+          <li>14:40 - <a href="future/julian-dunn.html">Now That I Have Choreography, What Can I Do With It?</a> - Julian Dunn</li>
+          <li>15:20 - Break</li>
+          <li>15:40 - <a href="future/kristian-van-der-vliet.html">Continuous Integration is not a solved problem</a> - Kristian van der Vliet</li>
+        </ul>
+
+        <a name="testing"></a><h2>Testing</h2>
+        <h3>B1.015</h3>
+        <p>
+          <strong>Tuesday, February 7</strong>
+        </p>
+        <ul>
+          <li>11:00 - <a href="testing/andy-henroid.html">Configuration Changes Don’t Have to be Scary: Testing with Containers</a> - Andy Henroid</li>
+          <li>11:40 - <a href="testing/mark-rendell.html">If it moves, give it a pipeline</a> - Mark Rendell</li>
+          <li>12:20 - <a href="testing/kerim-satirli-thomas-krag.html">Test Driven Development for Ops</a> - Kerim Satirli and Thomas Krag</li>
+        </ul>
+
+        <a name="miscellaneous"></a><h2>Miscellaneous</h2>
+        <h3>B1.017</h3>
+        <p>
+          <strong>Tuesday, February 7</strong>
+        </p>
+        <ul>
+          <a name="communities"></a>
+          <li>11:00 - <a href="misc/blerim-sheqa.html">Monitoring as Code with Icinga 2</a> - Blerim Sheqa</li>
+          <li>11:40 - <a href="misc/justin-carter.html">Orchestrating a Platform with BOSH</a> - Justin Carter</li>
+          <a name="ansible"></a>
+          <li>12:20 - <a href="misc/paul-stack.html">Centralised Logging without the blood sweat and tears</a> - Paul Stack</li>
+        </ul>
+        
+        <h1>Community Rooms</h1>
+
+        <h2>Ansible</h2>
+        <h3>B1.017</h3>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="ansible/dag-wieers.html">Ansible Anonymous - Dag Wieers</a></li>
+              <li>14:40 - <a href="ansible/patrick-karish.html">Escape the legacy: Don't fear the automation - Patrick Karish</a></li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="ansible/bert-van-vreckem.html">(Ab)using Docker for automated testing of Ansible roles on multiple distros with Travis-CI  - Bert Van Vreckem</a></li>
+              <li>16:20 - <a href="ansible/patrick-karish.html">Managing a client workstation fleet with Ansible and more - Patrick Karish</a></li>
+              <li>17:00 - <a href="ansible/graham-hayes.html">Bash to Ansible: Migrating a Kubernetes PaaS to config management - Graham Hayes</a></li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <a name="cfengine"></a>
+              <li>14:00 - <a href="ansible/toshaan-bharvani.html">Foreman and Ansible as a fact caching  - Toshaan Bharvani</a> </li>
+              <li>14:40 - <a href="ansible/attilla-de-groot.html">Building an IP-EVPN fabric with Cumulus Linux - Attilla de Groot</a></li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="ansible/dag-wieers.html">Taming Windows desktops using Ansible - Dag Wieers</a></li>
+              <li>16:20 - Ansible lightning talks and/or open discussions on ideas/issues/PRs</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>CFEngine</h2>
+        <h3>B3.036</h3>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+                <li>15:40 - <a href="cfengine/cfengine-kick-off-christian-linden.html">CFEngine Kick Off</a> - Christian Linden </li>
+                <li>16:20 - <a href="cfengine/testing-cfengine-policy-nick-anderson.html">Testing CFEngine Policy</a> - Nick Anderson</li>
+                <li>17:00 - <a href="cfengine/cfengine-hero-of-iot-martin-simons.html">CFEngine Hero of IoT</a> - Martin Simons</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>14:00 - <a href="cfengine/augments-def-json-bas-van-der-vlies.html">How to use the augments file (def.json)</a> - Bas van der Vlies </li>
+              <li>14:40 - <a href="cfengine/merging-tech-cfengine-with-cloud-and-containers-jurica-borozan.html">Merging Technologies, ideas on using CFEngine with cloud and container technologies</a> - Jurica Borozan</li>
+              <li>15:20 - Break</li>
+              <a name="chef"></a>
+              <li>15:40 - <a href="cfengine/cfengine-simplified-with-efl-neil-watson.html">CFEngine simplified with EFL</a> - Neil Watson</li>
+              <li>16:20 - <a href="cfengine/masterfiles-policy-framework-history-and-future-nick-anderson.html">The Masterfiles Policy Framework: A short history and future direction</a> - Nick Anderson</li>
+              <li>16:40 - <a href="cfengine/discussion.html">Open discussion</a> - CFEngine community</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Chef</h2>
+        <h3>B3.019</h3>
+        <p>
+          The following talks will happen in the Chef Community room (B3.019).
+          Be sure to visit the <a href='chef.html'>full schedule of Chef-related
+          talks</a>.
+        </p>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="chef/ama.html">Chef - Ask Me Anything (AMA)</a></li>
+              <li>14:40 - <a href="chef/steffen-gebert.html">An Open-Source Chef Cookbook CI/CD Implementation Using Jenkins Pipelines</a> - Steffen Gebert</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="chef/thom-may.html">What's coming in Chef 13</a> - Thom May</li>
+              <li>16:20 - <a href="chef/tim-smith.html">Building Better Community Cookbooks</a> - Tim Smith</li>
+              <li>17:00 - <a href="chef/stuart-preston.html">Chef, Microsoft, and Open Source: State of the Nation</a> - Stuart Preston</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>14:00 - <a href="chef/michael-goetz.html">Shared Services is Not a Field of Dreams</a> - Michael Goetz</li>
+              <a name="foreman"></a>
+              <li>14:40 - <a href="chef/brian-oconnell.html">CI/CD Workflows at Enterprise Sports Scale</a> - Brian O'Connell</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="chef/marek-hulan.html">How to get the most of Foreman and Chef</a> - Marek Hulán</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Foreman</h2>
+        <h3>B2.015</h3>
+        <p>Don't forget you can join us on Wednesday February 8 for the Foreman Construction Day (<a href="http://foreman-construction-day-2017.eventbrite.com/">register here</a>) held in the same location.
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="foreman/daniel-lobato-garcia.html">Introduction to Foreman (2017 edition)</a> - Daniel Lobato Garcia</li>
+              <li>14:40 - <a href="foreman/ohad-levy.html">5 unknown gems of Foreman</a> -  Ohad Levy</li>
+              <li>15:00 - <a href="foreman/greg-sutcliffe.html">Viewing potential Puppet catalog changes from the Foreman UI</a> - Greg Sutcliffe</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="chef/marek-hulan.html">Foreman templating engine: best practises and future</a> - Marek Hulan</li>
+              <li>16:20 - <a href="foreman/rich-jerrido.html">Building Robust &amp; Scalable Environments with Foreman + Katello</a> - Rich Jerrido</li>
+              <li>17:00 - <a href="foreman/ondrej-prazak.html">How to audit, fix (and be merry) with OpenSCAP &amp; Foreman</a> - Ondřej Pražák</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>14:00 - <a href="foreman/greg-sutcliffe.html">Foreman Community Update 2016/17</a> - Greg Sutcliffe</li>
+              <li>14:20 - <a href="foreman/tomer-brisker.html">Getting Your Issues Fixed in Foreman</a> - Tomer Brisker</li>
+              <li>14:40 - <a href="foreman/michael-moll.html">Puppet 4 support in Foreman</a> - Michael Moll </li>
+              <li>15:20 - Break</li>
+              <a name="juju"></a>
+              <li>15:40 - <a href="foreman/lukas-zapletal.html">Drop OS images on bare-metal</a> - Lukas Zapletal</li>
+              <li>16:00 - <a href="foreman/simon-peeters.html">Chickens and eggs: finding and resolving inter-node dependency issues with puppet</a> - Simon Peeters</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Juju</h2>
+
+        <h3>B4.039</h3>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="juju/jorge-and-marco.html">Open Source Operations with Juju 2.1 - Jorge Castro / Marco Ceppi</a></li>
+              <li>14:40 - <a href="juju/james-page.html">OpenStack Track: Flexible OpenStack Deployment and Ops with Charms - James Page</a></li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="juju/charles-butler.html">Kubernetes Track: Operating Etcd at Scale Without Losing Sleep - Charles Butler</a></li>
+              <li>16:20 - <a href="juju/matthew-bruzek.html">Kubernetes Track: The Evolution of the Kubernetes Model - Matthew Bruzek</a></li>
+              <li>17:00 - <a href="juju/tim-van-steenburgh.html">Operator Track: Driving Juju with Python - Tim Van Steenburgh</a></li>
+              <li>17:20 - Lightning Talks!</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>14:00 - <a href="juju/pete.html">Operator Track: Distributed Systems CI - Pete Vander Giessen</a></li>
+              <a name="kube"></a>
+              <li>14:40 - <a href="juju/kostas.html">Big Data Track: Focus on MapReduce and Spark Jobs, Not Deploying - Konstantinos Tsakalozos</a></li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="juju/alex-and-liam.html">Operator Track: Workshop: Writing Better Juju Charms - Alex Kavanagh / Liam Young</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Kubernetes</h2>
+        <a name="mgmt"></a>
+        <h3>B3.039</h3>
+        <ul>
+          <li>
+            Tuesday, February 7
+            <ul>
+              <li>14:00 - Introduction to kubeadm - Luke Mardsen </li>
+              <li>14:15 - The Kubernetes API - Stefan Schimanski </li>
+              <li>14:30 - Kompose Applications - Sebastien Goasguen </li>
+              <li>14:45 - Pros and Cons of CI/CD in a Distributed World - Michael Hausenblas </li>
+              <li>15:00 - Kubernetes without the YAML - Gareth Rushgrove </li>
+              <li>15:15 - Break </li>
+              <li>15:40 - Round Table and Hackathon </li>
+              <li>15:40 - #1 - Weave Open Source Tools demos</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>mgmt</h2>
+        <h3>B4.042</h3>
+        <ul>
+          <li>Tuesday, February 7
+          <a name="puppet"></a>
+            <ul>
+              <li>14:00 - <a href="future/james-shubin.html">Next Generation Config Mgmt:</a> Advanced Talk - James Shubin </li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="puppet/felix-frank.html">Puppet and mgmt: better together - Felix Frank</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Puppet</h2>
+        <h3>B1.015</h3>
+        <p>Also stay with us on Wednesday February 8 for the Puppet Contributor's Summit (<a href="https://www.eventbrite.com/e/contributor-summit-eu-2017-tickets-30359418839">register here</a>) held in the same location.
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="puppet/felix-frank.html">Extending Puppet within reason and beyond</a> - Felix Frank</li>
+              <li>14:40 - <a href="puppet/peter-souter.html">Compliance and auditing with Puppet</a> - Peter Souter</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="puppet/martin-alfke.html">Moving from Exec to Types and Providers</a> - Martin Alfke</li>
+              <li>16:20 - <a href="puppet/tim-meusel.html">Vox Pupuli: Empowering the Puppet Community</a> - Tim Meusel</li>
+              <li>17:00 - <a href="puppet/marcel-harry.html">Puppet Code Management at Scale</a> - Marcel Harry</li>
+              <li>17:20 - <a href="puppet/julien-pivotto.html">Puppet DSL: Back to the basics</a> - Julien Pivotto</li>
+            </ul>
+          </li>
+          <li>Tuesday, February 7
+            <ul>
+              <li>14:00 - <a href="puppet/felix-kronlage.html">Dr. Restless or how I stopped worrying about not having proper infrastructure docs at hand!</a> - Felix Kronlage</li>
+              <a name="rudder"></a>
+              <li>14:40 - <a href="puppet/alessandro-franceschi.html">Puppet control-repo to the next level</a> - Alessandro Franceschi</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="puppet/peter-souter.html">Knee deep in the undef: Tales from refactoring old Puppet codebases</a> - Peter Souter</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Rudder</h2>
+        <h3>B4.042</h3>
+        <p>
+          The following talks will happen in the Rudder Community room (B4.042).
+          Be sure to visit the <a href='rudder.html'>full schedule of Rudder-related
+          talks</a>.
+        </p>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="rudder/roadmap-jonathan-clarke.html">Rudder: what's new and what's next? Roadmap, vision and thoughts</a> (<a href="https://www.youtube.com/watch?v=kBPUJ9o3Dto&index=1&list=PL6rU2OMWTrhG7L0enRZ0b8v4_8idAds_m"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a>, <a href="http://www.slideshare.net/normation/rudder-whats-new-and-whats-next-roadmap-vision-and-thoughts"><i class="fa fa-desktop" aria-hidden="true"></i> slides</a>) - Jonathan Clarke</li>
+              <li>14:20 - <a href="rudder/automate-api-vincent-membre.html">Automate your automation with Rudder’s API! \o/</a> (<a href="https://www.youtube.com/watch?v=6OQ_PgGlOBc&list=PL6rU2OMWTrhG7L0enRZ0b8v4_8idAds_m&index=4"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a>, <a href="http://www.slideshare.net/normation/automate-your-automation-with-rudders-api-o"><i class="fa fa-desktop" aria-hidden="true"></i> slides</a>) - Vincent Membré</li>
+              <li>15:00 - <s><a href="rudder/configuration-management-as-a-service-olivier-mauras.html">Rudder and configuration management as a service - #cfgmgmtaas</a></s> (cancelled) - Olivier Mauras</li>
+              <li>15:20 - Break</li>
+              <li>15:40 - <a href="rudder/divorcing-your-single-vendor-cloud-florian-heigl.html">Divorcing your single vendor cloud</a> (<a href="https://www.youtube.com/watch?v=5G9LvfpN040&index=3&list=PL6rU2OMWTrhG7L0enRZ0b8v4_8idAds_m"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a>) - Florian Heigl</li>
+              <li>16:20 - <a href="rudder/getting-data-into-rudder-alexis-mousset.html">Getting data into Rudder</a> (<a href="https://www.youtube.com/watch?v=-cM9bg1RH-A&index=2&list=PL6rU2OMWTrhG7L0enRZ0b8v4_8idAds_m"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a>, <a href="http://www.slideshare.net/normation/getting-data-into-rudder"><i class="fa fa-desktop" aria-hidden="true"></i> slides</a>) - Alexis Mousset</li>
+              <li>17:00 - <a href="rudder/automating-manual-existing-systems-nicolas-charles.html">Automating the manual - feedback on including existing systems in configuration management</a> (<a href="https://www.youtube.com/watch?v=MZXwRnUkqkI&index=5&list=PL6rU2OMWTrhG7L0enRZ0b8v4_8idAds_m"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a>, <a href="http://www.slideshare.net/normation/automating-the-manual-feedback-on-including-existing-systems-in-configuration-management"><i class="fa fa-desktop" aria-hidden="true"></i> slides</a>) - Nicolas Charles</li>
+              <li>17:20 - <a href="rudder/community-open-discussion.html">Open discussion</a> - Rudder community</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Salt</h2>
+        <h3>B3.036</h3>
+        <ul>
+          <li>
+            Monday, February 6
+            <ul>
+              <li>14:00 - <a href="salt/david-boucha.html">Beyond Config Mgmt with Salt</a> - David Boucha </li>
+              <li>14:40 - <a href="salt/david-boucha.html">Saltstack 101</a> - David Boucha </li>
+            </ul>
+          </li>
+        </ul>
+
+          <a name="fringe"></a>
+        <h1>Fringe Events - Wednesday, February 8</h1>
+        <p>
+          CfgMgmtCamp.eu are also happy to welcome back the
+          <a href="../fringe.html">fringe events on Wednesday</a>, including the
+          traditional <a href="../fringe.html#puppet">Puppet Contributor's
+          Summit</a>, another <a href="../fringe.html#foreman">Foreman
+          Construction day</a>, a <a href="../fringe.html#habitat">Habitat
+          Workshop</a>, and a <a href="../fringe.html#mgmt">Mgmt Hackathon</a>.
+          Find <a href="../fringe.html">more details on the Fringe page</a>.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
