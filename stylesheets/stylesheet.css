@@ -111,7 +111,7 @@ nav {
   padding: 20px 0;
   top: 0;
   z-index: 1500; /* leaflet controls has a z-index of 1000 so we multiply that by 150% */
-  opacity: .95;
+  opacity: .75;
   border-top: 2px solid #5782ad;
   background: #fff;
   box-shadow: 2px 2px 5px #ccc;
