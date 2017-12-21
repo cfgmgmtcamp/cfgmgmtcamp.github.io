@@ -9,74 +9,90 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/pygment_trac.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://cfgmgmtcamp.eu/stylesheets/print.css" media="print" />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="shortcut icon" href="http://cfgmgmtcamp.eu/favicon.ico">
   <!--[if lte IE 8]>
-     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
   <![endif]-->
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-  <title>Config Management Camp Gent 2017</title>
+  <title>Tim Smith - Config Management Camp</title>
 </head>
 
 <body>
   <nav>
     <a href="#" id="menu-icon">&#x2261;</a>
     <ul>
-      <li><a href="../../index.html#about">About</a></li>
-      <li><a href="../../index.html#news">News</a></li>
-      <li><a href="../../index.html#registration">Registration</a></li>
-      <li><a href="../../index.html#sponsors">Sponsors</a></li>
-      <li><a href="../../index.html#route">Location</a></li>
-      <li><a href="../../schedule/index.html">Schedule</a></li>
-      <li><a href="../../code_of_conduct.html">Code of Conduct</a></li>
+      <li><a href="../../index.html"><img src="../../images/logo_top.png" alt="CfgMgmtCamp" height="40px"></a></li>
+      <li><a href="../../index.html#registration">Register</a> | </li>
+      <li><a href="../../index.html#sponsors">Sponsor</a> | </li>
+      <li><a href="../../index.html#route">Location</a> | </li>
+      <li><a href="../../schedule/index.html">Schedule</a> | </li>
+      <!-- <li><a href="../fringe.html">Fringe Events</a> | </li> -->
+      <li><a href="../../code_of_conduct.html">Conduct</a> | </li>
       <li><a href="../../past_events.html">Past Events</a></li>
     </ul>
   </nav>
+
   <div id="container">
     <header>
       <div class="inner">
         <h1>#cfgmgmtcamp</h1>
         <div class="camp-info">
-          <h2><strong>6</strong> and <strong>7</strong> February 2017</h2>
-          <h2>Gent, Belgium </h2>
+          <h2>Tim Smith</h2>
         </div>
+        <a name="containers"></a>
       </div>
     </header>
 
 
     <div class="inner">
       <section id="content">
-        <h1>Building Better Community Cookbooks</h1>
-        <h3>Tim Smith - Monday, February 6, 16:20 - 17:00 - B3.019</h3>
+        <h1>Chef and Containers: A love story</h1>
+        <h3>Tim Smith - Monday, February 5, 15:40 - 16:20</h3>
         <p>
-          With 3,000 cookbooks on the Supermarket it sometimes feels like there
-          are 3,000 different ways to write a cookbook. Attributes vs.
-          resources. Definitions vs. Custom Resources. Bats vs. ServerSpec vs.
-          InSpec. What exactly makes a good community cookbook and how can
-          cookbooks be written in a way to makes them more reusable in differing
-          environments?
+          We’re all operating in serverless greenfields right? Well…not quite.
+          How can we embrace container technology while still caring for our
+          existing systems? Learn how Chef can help you integrate containers
+          into your existing infrastructure as well help you move services to
+          the new world of Kubernetes.
         </p>
 
         <p>
-          In this talk we'll look at how community cookbooks differ from those
-          you write for  your own organization. We’ll dive into a bit of history
-          showing different cookbook design methods that have been used
-          throughout the eight year history of Chef. Then we'll talk about
-          building community cookbooks that are reusable and how you can use
-          those methods to improve the community cookbooks you write.
+          We’ll cover what a hybrid container strategy means and how you can use
+          Chef to integrate containers for application deployment within existing
+          systems. What services make sense in containers and how can you move
+          them from existing config management to containers driven by config
+          management. We’ll then cover using Chef to to build out a Kubernetes
+          cluster using a combination of community cookbooks for full cluster
+          turn up and management of applications running on that cluster.
+        </p>
+
+        <a name="chef14"></a>
+        <h1>Next stop Chef 14. See what’s coming</h1>
+        <h3>Tim Smith - Tuesday, February 6, 14:00 - 14:40</h3>
+        <p>
+          It’s been nearly a year since Chef 13 shipped and this upcoming April
+          we’ll ship Chef 14. In this talk we’ll cover what’s new in Chef 14 and
+          what the upgrade means to you. We’ll start off with a recap of this
+          last year’s development in Chef 13 and ChefDK 2.0. Come see everything
+          you might have have missed since the release of Chef 13.0 including
+          new resources, testing capabilities, platform support, and built in
+          functionality.
         </p>
 
         <p>
-          <a href="https://www.slideshare.net/TimothySmith56/building-better-chef-community-cookbooks">
-            <i class="fa fa-desktop" aria-hidden="true"></i><strong>
-            <strong>Slides are available on Slideshare</strong>.
-          </a>
+          From there we’ll jump right into Chef 14. Learn how we’re making Chef
+          14 the easiest Chef to get started with. We’ll cover new built-in
+          resources, improvements to custom resources, as well as new unit
+          testing functionality. We’ll chat about using the chef_client_updater
+          to deploy new versions of the chef-client and keeping your cookbook
+          code up to date with new releases of Chef.
         </p>
 
         <h2>About Tim Smith</h2>
@@ -84,13 +100,11 @@
           <img src='../../images/tas50.jpg' width='150' height='150' style='float:right; padding-left:20px;' />
           After he grew tired of commuting to work every day wearing a parka
           while doing desktop support in Antarctica, Tim jumped into web
-          operations. He quickly grew tired of pointing and clicking his way
-          through systems administration, and became hooked on automation using
-          Chef. He now works for Chef on the Community Engineering Team
-          improving community cookbooks and advocating best practices for
-          cookbook design and testing.
+          operations. Since then he's worked to ensure your web analytics are
+          always accurate, your streaming TV shows never buffer, and your rent
+          checks are always on time. He now works for Chef on the Community
+          Team improving community cookbooks.
         </p>
-
         <p>
           <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/tas50"></a>
           <a class="fa fa-github-square fa-2x" href="https://github.com/tas50"></a>
