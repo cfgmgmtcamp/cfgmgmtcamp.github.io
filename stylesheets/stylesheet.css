@@ -121,8 +121,9 @@ nav {
 }
 
 nav ul {
-  max-width: 820px;
+  min-width: 820px;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav ul li {
