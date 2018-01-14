@@ -53,12 +53,14 @@
       </header>
 <div class="inner">
 <section id="content">
-<h1>Fast and slow storage: Dynamic provisioning on Kubernetes</h1>
-<h3>David Zhu </h3><p>
-In the clusters of old, cluster administrators had to manually make calls to their cloud or storage provider to provision new storage volumes. Often this was a drawn out process that took hours or days. Now, we are able to automate this process with dynamic volume provisioning, a feature unique to Kubernetes. Storage resources no longer need to be pre-provisioned by cluster administrators; the resources can now be dynamically provisioned on various storage platforms and cloud providers using the provisioner specified by a Kubernetes Storage Class object.The talk will cover the required basic concepts of Kubernetes as well as a deep dive into the storage lifecycle stack. We will cover important innovations such as the Persistent Volume Claim model, Dynamic Provisioning, and Storage Classes. The talk will include a demonstration on how we can use the Kubernetes storage stack to solve many data related pain-points administrators face today.</p>
+  <h1>Openstack on Kubernetes a journey from configuration management to container scheduling  </h1><h3>  Zdenek Janda</h3><p>
+  Our team has deployed many Openstack clusters since ever. Our classic deployment was using VMs, orchestrated by Foreman and managed by Puppet. In single VM per service approach, just control plane for single Openstack instance could take more than 30Gb of memory, and even more when high availability was requested. Also upgrades were pain, using mostly manually updated Puppet modules and and manual Puppet runs across the infrastructure. Clearly, new approach was needed to resolve these issues. With rise of container technology like Docker and Kubernetes, we exploited Openstack-Helm, a project to run Openstack containerized and scheduled with Kubernetes. In this talk we present how we moved Openstack from Puppet based configuration management to container scheduling with Kubernetes and Helm, including live demo.
+
+</p>
 <h2>About Speaker</h2>
 <p>
-None</p>
+Zdenek is CEO at Cloudevelops and Cloudinfrastack, an opensource consulting and private cloud companies. His focus is DevOps, Ubuntu, Cloud, Openstack, Puppet, Monitoring, Alerting.
+</p>
 <p>
 <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/"></a><a class="fa fa-github-square fa-2x" href="https://github.com/"></a></p>
 </section>

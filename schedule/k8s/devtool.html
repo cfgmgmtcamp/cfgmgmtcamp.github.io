@@ -53,12 +53,26 @@
       </header>
 <div class="inner">
 <section id="content">
-<h1>Tools for automated bar</h1>
-<h3>etal Kubernetes setup and management? Why not Puppet? - Alexander Olofsson  </h3><p>
-None</p>
+<h1>Developer tooling for Kubernetes Configuration</h1>
+<h3>Gareth Rushgrove</h3><p>
+Writing Kubernetes YAML files provides a simple starting point for many users of Kubernetes. But as usage grows we build up a lot of those files. Many people reach for templating, or look at higher-level tooling like Helm. But catching errors is still a manual process of running the resulting configuration against a working cluster.
+
+In this talk we’ll look at what’s missing in this workflow, looking for inspiration from config management tools:
+
+<ul><li>
+Validating configuration against the Kubernetes API
+<li>Checking Kubernetes configuration against different versions of Kubernetes
+  <li>Unit testing your configuration
+    <li>Integrating this together into a continuous integration workflow
+
+</ul>
+
+We’ll show examples using YAML files, templating and higher-level tooling like Helm and Jsonnet. We’ll cover the benefits of a standard development environment, especially for new users, and provide tips for those getting started with Kubernetes. The audience should come away with ideas for making there Kubernetes experience more developer friendly.
+
+</p>
 <h2>About Speaker</h2>
 <p>
-None</p>
+Gareth Rushgrove is a principal software engineer at Puppet. He works remotely from Cambridge, UK, building interesting tools for people to better manage infrastructure. Previously he worked for the UK Government Digital Service focused on infrastructure, operations and information security. When not working he can be found writing the Devops Weekly newsletter or hacking on software in new-fangled programming languages.</p>
 <p>
 <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/"></a><a class="fa fa-github-square fa-2x" href="https://github.com/"></a></p>
 </section>
