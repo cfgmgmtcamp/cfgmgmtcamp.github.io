@@ -54,39 +54,47 @@
 <div class="inner">
 <section id="content">
 <h1>How to bring Continuous Configuration benefits to legacy systems</h1>
-<h3> Alexis Mousset</h3><p>
-New security threats and the the growing regulations make automation and compliance
-not only an option but a requirement, even for production systems that were not
-designed with automation in mind.
-Adding automation tools on existing production services might sound like a nightmare,
-but you won’t go from legacy to fully automated public Cloud / immutable
-infrastructure / Continuous Infrastructure in a day. With the right tools and
-methodologies, and small iterations, it is possible to sanitize and prepare convergence
-towards modern standards.
-Based on real life examples, this talk will go through the different phases of the process.
-It will cover the identification of the needs, how to chose the first points to automate,
-the reverse engineering of the infrastructure’s state, the automation and API-fication
-of the configuration, the continuous checking of its compliance, and the ability to
-move to new infrastructure standards.
+<h3> Nicolas Charles</h3><p>
+Rudder 4.1 was released in March 2017 with:
+
+<ul>
+    <li>an advanced feature to query external APIs and pull in node properties dynamically</li>
+    <li>the ability to add "key=value" tags to all Rules and Directives in order to categorize them</li>
+    <li>a new API on relay servers to enable node-to-node file sharing and remote run in firewalled environments
+performance improvements</li>
+    <li>a new plugin package format</li>
+</ul>
+
+Rudder 4.2 was released in September 2017 and includes the support for a new plugin that adds support for a new Windows DSC-based agent.
+
+Rudder 4.3 will include:
+
+<ul>
+    <li>Parameters for Technique Editor techniques</li>
+    <li>ACLs on the API accounts</li>
+    <li>Many architecture improvements</li>
+</ul>
+
+
+In parallel, new plugins are being developed:
+<ul>
+    <li>A plugin to integrate data from external APIs</li>
+    <li>Monitoring integration with Centreon</li>
+    <li>CMDB integration with iTop</li>
+    <li>A reporting plugin for historized compliance</li>
+</ul>
+
+This talk will introduce these new features and show how to use them, hopefully getting you as excited as we are! Then, we will move on to explain about longer-term feature ideas we have for Rudder, and the general vision linked to future developments.
 
 
 </p>
 <h2>About Speaker</h2>
 <p>
-Alexis Mousset joined Rudder team in 2015 and has worked on improving many different
-aspects of the solution: from the agent itself, to integration, right through to
-configuration policies. Indeed, Alexis is both a System Engineer who experiments
-everyday that automation has become mandatory to properly manage operations, and a
-Developer who has the proper skills to enhance automation tools capabilities. But
-what makes his experience even more valuable for the team is also the many consulting
-missions he has done for customers. Indeed, he’s the one who’s been the most confronted
-to companies willing to benefit from modern automation solutions like Rudder while
-being stuck on legacy technologies. The real challenge for Alexis had to enable them
-to go fast and safe regarding infrastructure automation issues, where everything
-
+Nicolas is a Rudder developer, and a tinkerer who likes when things just work and tries his best to reach this goal.
 </p>
 <p>
-<a class="fa fa-twitter-square fa-2x" href="https://twitter.com/alexismousset"></a><a class="fa fa-github-square fa-2x" href="https://github.com/amousset"></a></p>
+<a class="fa fa-twitter-square fa-2x" href="https://twitter.com/nico_charles"></a><a class="fa fa-github-square fa-2x" href="https://github.com/ncharles"></a></p>
+
 </section>
 </div>
     </div>
